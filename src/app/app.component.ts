@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WebSocketService } from './services/web-socket.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   title = 'map-iot';
+
+  constructor( private wsService: WebSocketService ) {}
+
 }
